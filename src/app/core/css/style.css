@@ -2974,9 +2974,7 @@ tbody.collapse.show {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
 }
-.custom-file-control:lang(en):empty::after {
-  content: "Choose file...";
-}
+
 .custom-file-control::before {
   position: absolute;
   top: -1px;
@@ -2992,9 +2990,7 @@ tbody.collapse.show {
   border: 1px solid #ced4da;
   border-radius: 0 0.25rem 0.25rem 0;
 }
-.custom-file-control:lang(en)::before {
-  content: "Browse";
-}
+
 
 .nav {
   display: flex;

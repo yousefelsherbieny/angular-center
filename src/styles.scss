@@ -47,3 +47,20 @@ body {
     color: white;
   }
 }
+
+/* Or */
+.form-floating ~ label { /* General sibling */
+  color: red;
+}
+
+%placeholder {
+  background-color: lightblue;
+}
+
+.my-class {
+  @extend %placeholder;
+}
+
+div {
+  background-color: lightblue;
+}
