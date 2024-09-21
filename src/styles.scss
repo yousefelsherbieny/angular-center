@@ -1,4 +1,4 @@
-/* Global styles */
+/* You can add global styles to this file, and also import other style files */
 @import "./app/core/css/style.css";
 
 .ltr {
@@ -19,7 +19,7 @@ body {
   }
 }
 
-/* Default and Dark Mode styles for testimonials */
+/* Default styles for testimonials */
 .testimonial {
   margin-top: 10px;
   margin-left: 200px;
@@ -27,40 +27,19 @@ body {
   width: 500px;
   font-size: large;
   margin-bottom: 40px;
-
-  /* Dark mode styles */
-  body.dark-mode & {
-    background-color: #26272f; /* Dark mode background */
-    color: #ffffff; /* Light text color */
-  }
 }
 
-/* Dark mode consolidated styles */
-.dark-mode {
-  body {
-    background-color: #0f1014;
-    color: white;
-  }
-
-  .testimonial {
-    background-color: #26272f;
-    color: white;
-  }
+/* Dark mode styles */
+body.dark-mode .testimonial {
+  background-color: #26272f; /* Dark mode background */
+  color: #ffffff; /* Light text color for better contrast */
 }
 
-/* Or */
-.form-floating ~ label { /* General sibling */
-  color: red;
-}
-
-%placeholder {
-  background-color: lightblue;
-}
-
-.my-class {
-  @extend %placeholder;
-}
-
-div {
-  background-color: lightblue;
+.testimonial {
+  margin-top: 10px;
+  margin-left: 200px;
+  background-color: azure;
+  width: 500px;
+  font-size: large;
+  margin-bottom: 40px;
 }
