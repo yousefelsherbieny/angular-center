@@ -1,0 +1,68 @@
+<div class="header">
+  <app-header></app-header>
+</div>
+
+<div class="page-content">
+  <div class="section mt-0">
+    <div>
+      <div class="container">
+        <div class="breadcrumbs">
+          <a routerLink="/home">{{ "BREADCRUMBS.HOME" | translate }}</a>
+          <span>{{ "BREADCRUMBS.SERVICES" | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section page-content-first">
+    <div class="container">
+      <div class="text-center mb-2 mb-md-3 mb-lg-4">
+        <h1 class="theme-color">{{ "HEADER.MENU.Services" | translate }}</h1>
+        <div class="h-decor"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <!-- Loop through procedures to display them -->
+        <div
+          class="gallery-item col-lg-4 col-md-6 col-sm-12 mb-4"
+          *ngFor="let procedure of procedures"
+        >
+          <div class="doctor-box text-center">
+            <div class="doctor-box-photo">
+              <a [routerLink]="['/procedure', procedure.id]">
+                <img
+                  [src]="procedure.image"
+                  class="img-fluid"
+                  alt="{{ 'SERVICES.IMAGE_ALT' | translate }}"
+                />
+              </a>
+            </div>
+            <h5 class="doctor-box-name">
+              <a [routerLink]="['/procedure', procedure.id]">
+                {{ "PROCEDURES." + procedure.id + ".name" | translate }}
+              </a>
+            </h5>
+            <div class="doctor-box-text">
+              <p>
+                {{
+                  "PROCEDURES." + procedure.id + ".shortDescription" | translate
+                }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <ul class="pagination justify-content-center">
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

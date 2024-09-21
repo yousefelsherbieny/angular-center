@@ -1,0 +1,58 @@
+<div class="header">
+  <app-header></app-header>
+</div>
+
+<div class="page-content">
+  <div class="section mt-0">
+    <div>
+      <div class="container">
+        <div class="breadcrumbs">
+          <a routerLink="/home">{{ "HEADER.MENU.HOME" | translate }}</a>
+          <span>{{ "HEADER.MENU.Blogs" | translate }} </span>
+        </div>
+      </div>
+    </div>
+    -
+  </div>
+  <div class="section page-content-first">
+    <div class="container">
+      <div class="text-center mb-2 mb-md-3 mb-lg-4">
+        <h1 class="theme-color">{{ "HEADER.MENU.Blogs" | translate }}</h1>
+        <div class="h-decor"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div
+          class="gallery-item col-lg-4 col-md-6 col-sm-12 mb-4"
+          *ngFor="let service of services"
+        >
+          <div class="doctor-box text-center">
+            <div class="doctor-box-photo">
+              <a [routerLink]="['/blogs', service.id]">
+                <img [src]="service.image" class="img-fluid" alt="" />
+              </a>
+            </div>
+            <h5 class="doctor-box-name">
+              <a [routerLink]="['/blogs', service.id]">{{
+                "SERVICES." + service.id + ".name" | translate
+              }}</a>
+            </h5>
+            <div class="doctor-box-text">
+              <p>
+                {{ "SERVICES." + service.id + ".shortDescription" | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <ul class="pagination justify-content-center">
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

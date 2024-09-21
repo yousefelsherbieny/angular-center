@@ -1,0 +1,369 @@
+<!--header-->
+<div class="header">
+  <app-header></app-header>
+</div>
+<!--//header-->
+<div class="page-content">
+  <!--section slider-->
+  <app-slider></app-slider>
+  <!--//section slider-->
+
+  <div class="section home-services">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="theme-color">{{ "BREADCRUMBS.SERVICES" | translate }}</h2>
+        <div class="h-decor"></div>
+      </div>
+
+      <div class="row">
+        <!-- Showcase selected services on the home page -->
+        <div class="gallery-item col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="doctor-box text-center">
+            <div class="doctor-box-photo">
+              <a routerLink="/procedure/facial-fat-injections">
+                <img
+                  src="assets/images/blog/b4.jpeg"
+                  class="img-fluid"
+                  alt="{{ 'SERVICES.IMAGE_ALT' | translate }}"
+                />
+              </a>
+            </div>
+            <h5 class="doctor-box-name">
+              <a routerLink="/procedure/facial-fat-injections">
+                {{ "PROCEDURES.facial-fat-injections.name" | translate }}
+              </a>
+            </h5>
+            <div class="doctor-box-text">
+              <p>
+                {{
+                  "PROCEDURES.facial-fat-injections.shortDescription"
+                    | translate
+                }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="doctor-box text-center">
+            <div class="doctor-box-photo">
+              <a routerLink="/procedure/body-sculpting">
+                <img
+                  src="assets/images/blog/m9.jpeg"
+                  class="img-fluid"
+                  alt="{{ 'SERVICES.IMAGE_ALT' | translate }}"
+                />
+              </a>
+            </div>
+            <h5 class="doctor-box-name">
+              <a routerLink="/procedure/body-sculpting">
+                {{ "PROCEDURES.body-sculpting.name" | translate }}
+              </a>
+            </h5>
+            <div class="doctor-box-text">
+              <p>
+                {{ "PROCEDURES.body-sculpting.shortDescription" | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fat Injections in Hands -->
+        <div class="gallery-item col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="doctor-box text-center">
+            <div class="doctor-box-photo">
+              <a routerLink="/procedure/fat-injections-hands">
+                <img
+                  src="assets/images/blog/b8.jpg"
+                  class="img-fluid"
+                  alt="{{ 'SERVICES.IMAGE_ALT' | translate }}"
+                />
+              </a>
+            </div>
+            <h5 class="doctor-box-name">
+              <a routerLink="/procedure/fat-injections-hands">
+                {{ "PROCEDURES.fat-injections-hands.name" | translate }}
+              </a>
+            </h5>
+            <div class="doctor-box-text">
+              <p>
+                {{
+                  "PROCEDURES.fat-injections-hands.shortDescription" | translate
+                }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lower Leg Fat Injections -->
+        <div class="gallery-item col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="doctor-box text-center">
+            <div class="doctor-box-photo">
+              <a routerLink="/procedure/legs-sculpting-and-muscle-definition">
+                <img
+                  src="assets/images/blog/m8.webp"
+                  class="img-fluid"
+                  alt="{{ 'SERVICES.IMAGE_ALT' | translate }}"
+                />
+              </a>
+            </div>
+            <h5 class="doctor-box-name">
+              <a routerLink="/procedure/legs-sculpting-and-muscle-definition">
+                {{
+                  "PROCEDURES.legs-sculpting-and-muscle-definition.name"
+                    | translate
+                }}
+              </a>
+            </h5>
+            <div class="doctor-box-text">
+              <p>
+                {{
+                  "PROCEDURES.legs-sculpting-and-muscle-definition.shortDescription"
+                    | translate
+                }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bat Ear Sculpting -->
+        <div class="gallery-item col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="doctor-box text-center">
+            <div class="doctor-box-photo">
+              <a routerLink="/procedure/bat-ear-sculpting">
+                <img
+                  src="assets/images/blog/87.png"
+                  class="img-fluid"
+                  alt="{{ 'SERVICES.IMAGE_ALT' | translate }}"
+                />
+              </a>
+            </div>
+            <h5 class="doctor-box-name">
+              <a routerLink="/procedure/bat-ear-sculpting">
+                {{ "PROCEDURES.bat-ear-sculpting.name" | translate }}
+              </a>
+            </h5>
+            <div class="doctor-box-text">
+              <p>
+                {{
+                  "PROCEDURES.bat-ear-sculpting.shortDescription" | translate
+                }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fat Injections in Buttocks -->
+        <div class="gallery-item col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="doctor-box text-center">
+            <div class="doctor-box-photo">
+              <a routerLink="/procedure/rhinoplasty-for-men">
+                <img
+                  src="assets/images/blog/m1.jpg"
+                  class="img-fluid"
+                  alt="{{ 'SERVICES.IMAGE_ALT' | translate }}"
+                />
+              </a>
+            </div>
+            <h5 class="doctor-box-name">
+              <a routerLink="/procedure/rhinoplasty-for-men">
+                {{ "PROCEDURES.rhinoplasty-for-men.name" | translate }}
+              </a>
+            </h5>
+            <div class="doctor-box-text">
+              <p>
+                {{
+                  "PROCEDURES.rhinoplasty-for-men.shortDescription" | translate
+                }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Other services can be added here -->
+      </div>
+    </div>
+  </div>
+
+  <!--section blog posts -->
+  <div class="section bg-grey">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="theme-color">{{ "HEADER.MENU.Blogs" | translate }}</h2>
+        <div class="h-decor"></div>
+      </div>
+      <div class="row">
+        <div class="gallery-item col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="doctor-box text-center">
+            <div class="doctor-box-photo">
+              <a routerLink="/service/new-Technologies">
+                <img
+                  src="assets/images/content/services-07-index.jpg"
+                  class="img-fluid"
+                  alt="{{ 'SERVICES.IMAGE_ALT' | translate }}"
+                />
+              </a>
+            </div>
+            <h5 class="doctor-box-name">
+              <a routerLink="/service/new-Technologies">
+                {{ "SERVICES.new-Technologies.name" | translate }}
+              </a>
+            </h5>
+            <div class="doctor-box-text">
+              <p>
+                {{ "SERVICES.new-Technologies.shortDescription" | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="doctor-box text-center">
+            <div class="doctor-box-photo">
+              <a routerLink="/service/the-Difference">
+                <img
+                  src="assets/images/blog/blog3.jpg"
+                  class="img-fluid"
+                  alt="{{ 'SERVICES.IMAGE_ALT' | translate }}"
+                />
+              </a>
+            </div>
+            <h5 class="doctor-box-name">
+              <a routerLink="/service/the-Difference">
+                {{ "SERVICES.the-Difference.name" | translate }}
+              </a>
+            </h5>
+            <div class="doctor-box-text">
+              <p>
+                {{ "SERVICES.the-Difference.shortDescription" | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="doctor-box text-center">
+            <div class="doctor-box-photo">
+              <a routerLink="/service/how-to-Choose">
+                <img
+                  src="assets/images/blog/blog11.jpg"
+                  class="img-fluid"
+                  alt="{{ 'SERVICES.IMAGE_ALT' | translate }}"
+                />
+              </a>
+            </div>
+            <h5 class="doctor-box-name">
+              <a routerLink="/service/how-to-Choose">
+                {{ "SERVICES.how-to-Choose.name" | translate }}
+              </a>
+            </h5>
+            <div class="doctor-box-text">
+              <p>
+                {{ "SERVICES.how-to-Choose.shortDescription" | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--//section blog posts -->
+  <!--section -->
+  <div class="section">
+    <div class="text-center">
+      <h2>
+        Let’s hear from <br class="d-sm-none" /><span class="theme-color"
+          >healthy patient’s</span
+        >
+      </h2>
+      <div class="h-decor"></div>
+    </div>
+
+    <div class="Doctor row">
+      <div class="testimonial col-lg-6">
+        <img src="assets/images/content/doctop-01-sm.jpg" alt="Anna Lane" />
+        <div class="text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Nisl aliquet dolor facilisi
+            vel tristique. Vel elementum proin est nulla non accumsan eli.
+          </p>
+          <p class="name theme-color">Anna Lane</p>
+        </div>
+      </div>
+      <div class="testimonial col-lg-6">
+        <img src="assets/images/content/doctop-02-sm.jpg" alt="Louis Jourez" />
+        <div class="text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Nisl aliquet dolor facilisi
+            vel tristique. Vel elementum proin est nulla non accumsan eli.
+          </p>
+          <p class="name theme-color">Louis Jourez</p>
+        </div>
+      </div>
+      <div class="testimonial col-lg-6">
+        <img src="assets/images/content/doctop-03-sm.jpg" alt="Debra Potors" />
+        <div class="text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Nisl aliquet dolor facilisi
+            vel tristique. Vel elementum proin est nulla non accumsan eli.
+          </p>
+          <p class="name theme-color">Debra Potors</p>
+        </div>
+      </div>
+      <div class="testimonial col-lg-6">
+        <img src="assets/images/content/doctop-04-sm.jpg" alt="Mark Jimenez" />
+        <div class="text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Nisl aliquet dolor facilisi
+            vel tristique. Vel elementum proin est nulla non accumsan eli.
+          </p>
+          <p class="name theme-color">Mark Jimenez</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--//section -->
+  <!--section call us-->
+  <div class="section mt-5">
+    <div class="container">
+      <div class="banner-call">
+        <div class="row no-gutters">
+          <div class="text-center">
+            <h2>
+              Got some <br class="d-sm-none" /><span class="theme-color"
+                >questions</span
+              >
+            </h2>
+            <div class="h-decor"></div>
+          </div>
+          <div class="px-15"></div>
+          <div class="col-sm-5 col-lg-7 col-xl-4">
+            <div class="question">
+              {{ "ABOUT.Question1" | translate }}
+            </div>
+            <div class="question">
+              {{ "ABOUT.Question2" | translate }}
+            </div>
+            <div class="question">
+              {{ "ABOUT.Question3" | translate }}
+            </div>
+            <div class="question">
+              {{ "ABOUT.Question4" | translate }}
+            </div>
+            <div class="question">
+              {{ "ABOUT.Question5" | translate }}
+            </div>
+            <div class="question">
+              {{ "ABOUT.Question6" | translate }}
+            </div>
+          </div>
+          <div class="col-sm-5 col-lg-5 col-xl-4 mt-3">
+            <img src="assets/images/content/banner-callus.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--//section call us-->
+</div>
+<!--footer-->
+<app-footer></app-footer>
+<!--//footer-->

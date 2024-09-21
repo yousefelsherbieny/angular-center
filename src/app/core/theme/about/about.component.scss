@@ -1,0 +1,71 @@
+.bg-full {
+  height: 600px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.col-lg-8 {
+  width: 600px;
+  p {
+    font-size: larger;
+  }
+}
+.section {
+  margin-top: 30px;
+  p {
+    padding: 10px;
+  }
+}
+.testimonial {
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: azure;
+  width: 500px;
+  font-size: large;
+  margin-bottom: 40px;
+}
+.stats-container {
+  margin: 5px;
+  padding: 5px;
+  height: 150px;
+  width: 1200px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: cadetblue;
+  color: beige;
+  border-radius: 10px;
+  font-size: larger;
+}
+.stat-item {
+  border: solid beige;
+  border-radius: 5px;
+  width: 250px;
+  margin-left: 10px;
+}
+.gallery-item p {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.question {
+  background-color: darkcyan;
+  color: rgb(244, 235, 224);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px;
+  width: 400px;
+  font-size: large;
+}
+.col-lg-7 {
+  margin-top: 110px;
+}
+.gallery-specialist {
+  width: 1300px;
+  margin-left: 70px;
+  margin-right: 90px;
+}
+.no-gutters {
+  margin-left: 100px;
+}
+.testimonial img {
+  border-radius: 25px;
+}

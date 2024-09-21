@@ -1,0 +1,81 @@
+.prd img {
+  height: 250px;
+  width: 350px;
+  border-radius: 100px;
+  margin-left: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.prd p {
+  font-weight: bold;
+}
+.prd {
+  height: 450px;
+  border-radius: 100px;
+}
+.prd-grid {
+  margin: 10px;
+  width: 1300px;
+  margin-left: 150px;
+}
+.container-fluid {
+  height: 400px;
+  width: 1200px;
+  background-color: azure;
+  border-radius: 20px;
+  ul {
+    margin-top: 20px;
+  }
+}
+.row ul li {
+  list-style: none;
+}
+.fa-regular {
+  margin-right: 20px;
+}
+.fa-solid {
+  margin-right: 20px;
+}
+.question {
+  background-color: darkcyan;
+  color: rgb(244, 235, 224);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  margin-right: 20px;
+  width: 450px;
+  font-size: large;
+}
+.testimonial {
+  background-color: azure;
+  margin: 30px;
+  width: 600px;
+  img {
+    border-radius: 10px;
+  }
+  p {
+    font-size: large;
+  }
+}
+.col-lg-7 {
+  margin-top: 110px;
+}
+.post-image img {
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+}
+.blog-post-info {
+  border-radius: 20px;
+}
+.Doctor {
+  margin-left: 90px;
+}
+.gallery-item img {
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+}
+.col-sm-5 img {
+  margin-left: 150px;
+}

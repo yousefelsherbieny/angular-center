@@ -1,0 +1,58 @@
+.text-center h3 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+ol.procedure-list {
+  counter-reset: step-counter; /* Initialize a counter for numbering */
+  list-style: none; /* Remove default list styling */
+  padding-left: 0;
+}
+
+ol.procedure-list li {
+  margin-bottom: 20px; /* Space between list items */
+  padding-left: 40px; /* Space for the numbering */
+  position: relative;
+}
+
+ol.procedure-list li::before {
+  content: counter(step-counter); /* Use the counter for numbering */
+  counter-increment: step-counter; /* Increment the counter */
+  background-color: #009688; /* Background color for the number */
+  color: white; /* Number color */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Make the number a circle */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0; /* Align to the left */
+  top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-family: "Poppins", serif;
+  line-height: 1.22em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 27px;
+}
+
+.full-width-image {
+  width: 400px;
+  height: 300px; /* Make the image take full width of its container */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  border-radius: 100px; /* Remove any rounded corners if there are any */
+}

@@ -1,0 +1,219 @@
+<div class="header">
+  <app-header></app-header>
+</div>
+
+<div class="page-content">
+  <div class="section mt-0">
+    <div>
+      <div class="container">
+        <div class="breadcrumbs">
+          <a routerLink="/home">{{ "HEADER.MENU.HOME" | translate }}</a>
+          <a routerLink="/service-page">{{
+            "HEADER.MENU.Blogs" | translate
+          }}</a>
+          <span>{{ "SERVICES." + service.id + ".name" | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--//section-->
+  <!--section-->
+  <div class="section page-content-first">
+    <div class="container mt-6">
+      <div class="row">
+        <div class="col-md">
+          <ul class="services-nav flex-column flex-nowrap">
+            <li class="nav-item">
+              <a class="nav-link">{{ "SERVICES.OURBLOG" | translate }}</a>
+              <div class="collapse show" id="submenu1">
+                <ul class="flex-column nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      [routerLink]="['/blogs', 'how-to-Choose']"
+                      >{{
+                        "SERVICES." + "how-to-Choose" + ".name" | translate
+                      }}</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      [routerLink]="['/blogs', 'post-Surgery']"
+                      >{{
+                        "SERVICES." + "post-Surgery" + ".name" | translate
+                      }}</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      [routerLink]="['/blogs', 'the-Difference']"
+                      >{{
+                        "SERVICES." + "the-Difference" + ".name" | translate
+                      }}</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      [routerLink]="['/blogs', 'cosmetic-Surgery']"
+                      >{{
+                        "SERVICES." + "cosmetic-Surgery" + ".name" | translate
+                      }}</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      [routerLink]="['/blogs', 'the-Benefits']"
+                      >{{
+                        "SERVICES." + "the-Benefits" + ".name" | translate
+                      }}</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      [routerLink]="['/blogs', 'new-Technologies']"
+                      >{{
+                        "SERVICES." + "new-Technologies" + ".name" | translate
+                      }}</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="row d-flex flex-column flex-sm-row flex-md-column mt-3">
+            <div class="col-auto col-sm col-md-auto">
+              <div class="contact-box contact-box-1">
+                <h5 class="contact-box-title">
+                  {{ "Common.WorkingTime" | translate }}
+                </h5>
+                <ul class="icn-list">
+                  <li>
+                    <i class="icon-clock"></i
+                    >{{ "Common.MonThu" | translate }} 08:00 - 20:00 <br />{{
+                      "Common.Friday" | translate
+                    }}
+                    07:00 - 22:00 <br />{{ "Common.Saturday" | translate }}
+                    08:00 - 18:00
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-auto col-sm col-md-auto">
+              <div class="contact-box contact-box-2">
+                <h5 class="contact-box-title">
+                  {{ "Common.ContactInfo" | translate }}
+                </h5>
+                <ul class="icn-list">
+                  <li>
+                    <i class="icon-telephone"></i>
+                    <div class="d-flex flex-wrap">
+                      <span>{{ "Common.Phone" | translate }}:&nbsp;&nbsp;</span>
+                      <span
+                        >1-800-267-0000<br />
+                        1-800-267-0001</span
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="question-box mt-3">
+            <h5 class="question-box-title">{{ "Common.Ask" | translate }}</h5>
+            <form id="questionForm" method="post" novalidate>
+              <div class="successform">
+                <p>{{ "Common.YourMessage" | translate }}</p>
+              </div>
+              <div class="errorform">
+                <p>
+                  {{ "Common.SomethingWrong" | translate }}
+                </p>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                placeholder="Your name*"
+              />
+              <input
+                type="text"
+                class="form-control"
+                name="email"
+                placeholder="E-mail*"
+              />
+              <input
+                type="text"
+                class="form-control"
+                name="phone"
+                placeholder="Phone"
+              />
+              <textarea
+                class="form-control"
+                name="message"
+                placeholder="Question*"
+              ></textarea>
+              <button type="submit" class="btn btn-sm btn-hover-fill mt-15">
+                <i class="icon-right-arrow"></i
+                ><span>{{ "Common.AskNow" | translate }}</span
+                ><i class="icon-right-arrow"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-9 mt-4 mt-md-0">
+          <div class="title-wrap">
+            <h3>{{ "SERVICES." + service.id + ".name" | translate }}</h3>
+            <div class="h-decor"></div>
+          </div>
+          <div class="service-img">
+            <img
+              [src]="service?.image"
+              class="img-fluid full-width-image"
+              alt="{{ service?.name }}"
+            />
+          </div>
+          <div class="mt-3 mt-lg-6"></div>
+          <p>
+            {{ "SERVICES." + service.id + ".longDescription" | translate }}
+          </p>
+          <div class="mt-5 mt-lg-6"></div>
+
+          <h3>{{ "Common.Description" | translate }}</h3>
+
+          <!-- Conditionally display descriptions if they exist -->
+          <ol *ngIf="service?.descriptions?.length > 0" class="service-list">
+            <li *ngFor="let description of service.descriptions; let i = index">
+              <h4>
+                {{
+                  "SERVICES." + service.id + ".description.title." + i
+                    | translate
+                }}
+              </h4>
+              <p>
+                {{
+                  "SERVICES." + service.id + ".description.text." + i
+                    | translate
+                }}
+              </p>
+            </li>
+          </ol>
+
+          <!-- Display message if no descriptions are available -->
+          <p
+            *ngIf="!service?.descriptions || service.descriptions.length === 0"
+          >
+            No descriptions available.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--//section-->
+</div>
+
+<app-footer></app-footer>
